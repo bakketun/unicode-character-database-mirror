@@ -10,18 +10,18 @@ mkdir Public
 (cd Public
  wget https://www.unicode.org/Public/ReadMe.txt
 
- mkdir -p zipped/13.0.0
- (cd zipped/13.0.0
-  wget https://www.unicode.org/Public/zipped/13.0.0/ReadMe.txt
+ mkdir 13.0.0
+ (cd 13.0.0
+  wget https://www.unicode.org/Public/13.0.0/ReadMe.txt
 
-  mkdir UCD
-  (cd UCD
+  mkdir ucd
+  (cd ucd
    wget https://www.unicode.org/Public/zipped/13.0.0/UCD.zip
-   unzip UCD.zip)
+   unzip UCD.zip
 
-  mkdir Unihan
-  (cd Unihan
-   wget https://www.unicode.org/Public/zipped/13.0.0/Unihan.zip
-   unzip Unihan.zip)))
+   mkdir Unihan
+   (cd Unihan
+    wget https://www.unicode.org/Public/zipped/13.0.0/Unihan.zip
+    unzip Unihan.zip))))
 
 git clean -fX Public/
